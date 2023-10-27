@@ -90,7 +90,7 @@
     </table>
     
     <script>
-        var ttable = document.getElementById('calendar');
+        var table = document.getElementById('calendar');
         var yearSelect = document.getElementById('year');
         var monthSelect = document.getElementById('month');
         var today = new Date();
@@ -106,7 +106,7 @@
 
         for (var month = 1; month <= 12; month++) {
             var option = document.createElement('option');
-            option.value = month;
+            option.textContent = month;
             option.textContent = month;
             monthSelect.appendChild(option);
         }
